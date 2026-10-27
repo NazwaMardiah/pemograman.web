@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kontak & Pesanan_Poliban DigiCraft Studio</title>
+    <link rel="stylesheet" href="style.css">gt
+</head>
+<body>
+    <!-- Bagian Kepala Halaman (Header & Navigasi) -->
+     <header>
+        <div class="conteiner">
+            <h1>Poliban DigiCraf Studio</h1>
+            <p>Solusi Transformasi Bisnis Digital Anda di Banjarmasin</p>
+            <hr>
+            <nav>
+                <a href="biodata.html">Tentang Founder</a> |
+                <a href="produk.html" class="active">Katalog Jasa & Paket Harga</a> |
+                <a href="kontak.html">kontak & Pemesanan</a>
+            </nav>
+        </div>
+     <header>
+    <hr>
+            <main>
+                <h2>Formulir Pesanan Jasa & Layanan Pelayanan</h2>
+                <p>Silahkan isi formulir dibawah ini untuk mengajukan paket jasa atau
+                    berkontribusi dengan tim ahli kami.</p>
+
+                <form action="#">
+                    <!-- Grup 1: Data Diri Pelanggan -->
+                    <fieldset>
+                        <legend><b>1. Informasi Identitas Pemesanan</b></legend>
+                        <br>
+                        <label for="nama_lengkap">Nama Lengkap/ Instansi:</label><br>
+                        <input type="text" id="nama_lengkap" name="nama_lengkap"
+                            placeholder="contoh: Nazwa Nor Ellyta Rusdina Mardiah" size="40" required>
+                        <br><br>
+
+                        <label for="email_pesanan">Alamat Email Aktif:</label><br>
+                        <input type="email" id="email_pesanan" name="email_pesanan" placeholder="nama@domain.com"
+                            size="40" required>
+                        <br><br>
+
+                        <label for="no_whatsapp">No Whatsapp / HP</label><br>
+                        <input type="tel" id="no_whatsapp" name="no_whatsapp" placeholder="081234567890" size="40"
+                            required>
+                        <br><br>
+
+                        <label>Tipe Kategori Klien:</label>
+                        <input type="radio" id="Kategori_personal" name="tipe_klien" value="Personal" checked>
+                        <label for="Kategori_personal">Perorangan / UMKM</label>&nbsp;&nbsp;
+                        <input type="radio" id="kategori_korporat" name="tipe_klien" value="korporat">
+                        <label for="kategori_korporat">Perusahaan / Instansi Pemerintah</label>
+                        <br><br>
+
+                    </fieldset>
+                    <!-- Detail Pemesanan Pelayanan -->
+                    <fieldset>
+                        <legend><b>2. Rincian Digital</b></legend>
+                        <br>
+                        <label for="pilih_paket">Pilih Paket Layanan (Lihat Katalog dihalaman Produk):</label><br>
+                        <select id="pilih_paket" name="pilih_paket" required>
+                            <option value="">-- Pilih Paket Jasa --</option>
+                            <option value="Silver">Paket Silver Branding (Rp. 1.500.000)</option>
+                            <option value="Gold">Paket Gold Web Development (Rp 3.000.000)</option>
+                            <option value="Platinum">Paket Platinum Full Digital Transformation (Rp 5.000.000)</option>
+                            <option value="Custom">Konsultasi Custom Project </option>
+                        </select>
+                        <br><br>
+
+                        <label>Layanan Tambahan (Add-Ons):</label><br>
+                        <input type="checbox" id="addon_seo" name="addons[]" value="SEO Optimization">
+                        <label for="addon_seo">Optimasi SEO On-Page (+ Rp 500.000)</label><br>
+                        <input type="checkbox" id="addon_express" name="addons[]" value="Express Delevery">
+                        <label for="addon_express">Pengerjaan Kilat 3 Hari (+ Rp 750.000)</label><br>
+                        <input type="checkbox" id="addon_content" name="addons[]" value="Content Writing">
+                        <label for="addon_content">Penulisan Konten Artikel & Copywriting (+ Rp 400.000)</label><br>
+
+                        <label for="target_selesai">Estimasi Target Selesai:</label><br>
+                        <input type="date" id="target_selesai" name="target_selesai">
+                        <br><br>
+
+                        <label for="detail_pesan">Deskripsi / Catatan Khusus Proyek:</label><br>
+                        <textarea id="detail_pesan" name="detail_pesan" rows="6" cols="50"
+                            placeholder="Tulisakan gambaran singkat mengenai proyek yang Anda inginkan..."></textarea>
+                        <br><br>
+                    </fieldset>
+                    <br>
+
+                    <!-- Tombol Aksi -->
+                    <button type="submit"><b>Kirim Pemesanan Sekarang</b></button>
+                    &nbsp;
+                    <button type="reset">Bersihkan Formulir</button>
+                    <!-- Bagian Informasi Alamat & Peta Studio -->
+                    <section>
+                        <hr>
+                        <h3>Kantor & Studio Operasional</h3>
+                        <p><b>Poliban DigiCraf Studio Banjarmasin</b><br>
+                            Gedung Laboratorium Bisnis Digital, Kampus Politeknik Negeri Banjarmasin<br>
+                            jl. Brigjen H.Hasan Basry, Kayu Tangi, Banjarmasin, Kalimantan Selatan<br>
+                            Emai: <i>info@DigiCrafstudio.ac.id</i> | Whatsapp: <i>0812-5555-8888</i></p>
+
+                        <h4>Lokasi Studio di Google Maps:</h4>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497.90249544029797!2d114.58163525325368!3d-3.295632977345897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de423a80d47ba6b%3A0x8f5abfaddfe5a2d7!2sPoliteknik%20Negeri%20Banjarmasin!5e0!3m2!1sen!2sid!4v1791272579681!5m2!1sen!2sid"
+                            width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen="">
+                        </iframe>
+                    </section>
+
+                    <footer>
+                        <hr>
+                        <p align="center">&copy; 2026 Poliban DigiCraft Studio - Hak Cipta Dilindungi Undang-Undang.</p>
+                    </footer>
+                    </head>
+
+                    <body>
+
+                    </body>
+
+</html>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+
+
+
+</fieldset>
+</form>
+</main>
+
+<footer>
+    <hr>
+    <p align="center">&copy; 2026 Poliban DigiCraf Studio. All right reserved.</p>
+</footer>
+
+</body>
+
+</html>
