@@ -1,0 +1,110 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BACKGROUND */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #e9d5ff, #f5eaff, #dbeafe);
+    color: #333;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* JUDUL UTAMA */
+h1 {
+    text-align: center;
+    color: #6b21a8;
+    font-size: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* KARTU BIODATA */
+body > div {
+    background: white;
+    max-width: 650px;
+    margin: 20px auto;
+    padding: 25px 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(107, 33, 168, 0.12);
+    border-left: 6px solid #a855f7;
+    transition: 0.3s ease;
+}
+
+/* EFEK HOVER */
+body > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(107, 33, 168, 0.2);
+}
+
+/* SUB JUDUL */
+h2 {
+    color: #7e22ce;
+    font-size: 21px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e9d5ff;
+    padding-bottom: 10px;
+}
+
+/* PARAGRAF */
+p {
+    line-height: 2;
+    font-size: 15px;
+}
+
+/* LABEL BIODATA */
+span {
+    color: #9333ea;
+    font-weight: bold;
+}
+
+/* NAMA */
+strong {
+    color: #4c1d95;
+}
+
+/* NIM */
+em {
+    color: #64748b;
+}
+
+/* LIST PENDIDIKAN DAN HOBI */
+ol, ul {
+    padding-left: 25px;
+    line-height: 2;
+}
+
+li {
+    font-size: 15px;
+    padding-left: 5px;
+}
+
+/* EFEK LIST */
+li::marker {
+    color: #9333ea;
+    font-weight: bold;
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 600px) {
+    body {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    body > div {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
